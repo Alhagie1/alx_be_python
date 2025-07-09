@@ -1,4 +1,4 @@
-# Calculating  simple Interest
+# Calculating simple Interest
 
 # Amount in dollars
 principal = 1000
@@ -7,5 +7,8 @@ rate = 0.05
 # Time in years
 time = 3
 
-interest = (principal*rate*time)
+P = principal
+R = rate
+T = time
+interest = P*R*T
 print("The simple interest is:" , interest)
