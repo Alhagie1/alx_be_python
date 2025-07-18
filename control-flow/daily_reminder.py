@@ -1,9 +1,9 @@
 
 # Personal Daily Reminder program
 
-task = input("Enter your task :").strip()# Task Description
-priority = input("Priority(high, medium, low): ").strip().lower() # Task priority
-time_bound = input("Is it time-bound(yes/no) :").strip().lower()
+task = input("Enter your task :").strip()
+priority = input("Priority(high/medium/low): ").strip().lower()
+time_bound = input("Is it time-bound ?(yes/no) :").strip().lower()
 priority_description = ""
 priority_is_valid = True
 match priority:
