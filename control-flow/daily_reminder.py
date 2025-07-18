@@ -1,13 +1,11 @@
 
 # Personal Daily Reminder program
 
-task = input("Enter your task :") # Task Description
-priority = input("Priority (high, medium, low): ").lower() # Task priority
-time_bound = input("Is it time-bound  (yes/no) :").lower() 
-
+task = input("Enter your task :").strip()# Task Description
+priority = input("Priority(high, medium, low): ").strip().lower() # Task priority
+time_bound = input("Is it time-bound(yes/no) :").strip().lower()
 priority_description = ""
 priority_is_valid = True
-
 match priority:
     case "high":
         priority_description = "a high priority task"
@@ -18,7 +16,6 @@ match priority:
     case _:
         print("Error: Choose high , low or medium")
         priority_is_valid = False
-
 if priority_is_valid:
      if time_bound  == "yes":
          print(f"Reminder: {task} is {priority_description} task that requires immediate attention")
