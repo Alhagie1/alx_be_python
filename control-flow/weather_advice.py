@@ -3,7 +3,7 @@
 
 # Asking for user's weather input
 weather = input("What is the weather like today? (sunny/rainy/cold):")
-
+weather = weather.lower()
 # Giving recommendation based on provided weather conditions
 if weather == "sunny":
     print("Wear a t-shirt and sun glasses")

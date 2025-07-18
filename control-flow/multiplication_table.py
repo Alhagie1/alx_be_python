@@ -8,4 +8,4 @@ for current_number in range(current_number, 11):
     Y = number
     Z = X * Y
     print(f"{X} * {Y} = {Z}")
-    current_number += 1
+    
