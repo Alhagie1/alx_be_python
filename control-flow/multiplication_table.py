@@ -4,11 +4,7 @@
 
 
 number = int(input("Enter a number to see its multiplication table: "))
-numbers = range(1, 11)
-current_number = 1
-for current_number in numbers:
-    X = number
-    Y = current_number
-    Z = X * Y
-    print(f"{X} * {Y} = {Z}")
+for i in range(1,11):
+    product = number * i
+    print(f"{number} * {i} = {product}")
     
