@@ -1,9 +1,9 @@
 
 # Personal Daily Reminder program
 
-task = input("Enter your task :").strip()
-priority = input("Priority(high/medium/low): ").strip().lower()
-time_bound = input("Is it time-bound ?(yes/no) :").strip().lower()
+task = input("Enter your task: ").strip()
+priority = input("Priority (high/medium/low): ").strip().lower()
+time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
 priority_description = ""
 priority_is_valid = True
 match priority:
@@ -18,11 +18,11 @@ match priority:
         priority_is_valid = False
 if priority_is_valid:
      if time_bound  == "yes":
-         print(f"Reminder: {task} is {priority_description} task that requires immediate attention")
+         print(f"Reminder: {task} is {priority_description} task that requires immediate attention today!")
      elif time_bound == "no":
          print(f"Note: {task} is a {priority_description}. Consider finishing it in your free time.")
      else:
-         print(f"Entered an invalid time bound just answer (yes or no) ")
+         print("Entered an invalid time bound just answer (yes or no) ")
 
 
 
