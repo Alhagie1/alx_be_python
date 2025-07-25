@@ -7,7 +7,7 @@ def display_menu():
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
-    
+    print("4. Exit")
 
 # The main function of the Program
 def main():
@@ -17,7 +17,7 @@ def main():
         choice = input("Enter your choice: ").strip() # Prompt a user for a choice
 
         if choice == "1":
-             item = input("Enter an item name: ").strip() # prompting user to add an item to the list
+             item = input("Enter the item to add: ").strip() # prompting user to add an item to the list
              shopping_list.append(item)
         elif choice == "2":
             item = input("What is the item's name? ").strip() # asking a user the name of the item they want to remove
