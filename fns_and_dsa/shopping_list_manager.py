@@ -7,7 +7,7 @@ def display_menu():
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
-    print("4. Exit")
+    
 
 # The main function of the Program
 def main():
