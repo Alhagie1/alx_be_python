@@ -14,11 +14,11 @@ def perform_operation(num1, num2, operation):
         result = num1 * num2
         return result
     elif operation == "divide":
-        if num2 != 0:
-            result = num1 / num2
-            return result
+        if num2 == 0:
+            print("Number cannot be divide by zero")   
         else:
-            print(f"{num1}cannot be divide with zero")
+            result = num1 / num2
+            return result           
     else:
         print("Operation is invalid.")
 perform_operation(5, 6, "add")
