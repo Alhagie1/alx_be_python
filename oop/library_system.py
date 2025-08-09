@@ -27,7 +27,7 @@ class PrintBook(Book):
         return f"PrintBook: {self.title} by {self.author}, Page count: {self.page_count}"
 # Composition Class Library
 class Library:
-    def __init__(self, books):
+    def __init__(self):
         self.books = []
     
     def add_book(self,book):
