@@ -20,9 +20,9 @@ class Circle(Shape):
     def __init__(self, radius):
         super().__init__()
         self.radius = radius
-    # Circle area method
+    # The Circle's area method
     def area(self):
-        area_of_circle = math.pi * (self.radius**2)
+        area_of_circle = math.pi * (self.radius** 2)
         return area_of_circle
 
     
