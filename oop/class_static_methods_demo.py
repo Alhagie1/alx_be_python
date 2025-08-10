@@ -1,12 +1,13 @@
-
+#  Class Methods and Static Methods
 class Calculator:
-    calcukation_type = "Arithmetic Operations"
+    calculation_type = "Arithmetic Operations"
+
     @staticmethod
     def add(a, b):
         return a + b
     
     @classmethod
     def multiply(cls, a, b):
-        print (f"Calculation type: {Calculator.calcukation_type}")
+        print (f"Calculation type: {Calculator.calculation_type}")
         return a * b
     
